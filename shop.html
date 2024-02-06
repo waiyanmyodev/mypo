@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/shop.css">
+    </head>
+<script src="app.js"></script>
+    <body>
+
+<!-- Navbar -->
+<div class="cart">
+    <h1>Your Cart</h1>
+    <ul class="listCard"></ul>
+    <div class="checkOut">
+        <div onclick="checkout()">Checkout</div>
+        <div onclick="closeCart()">Close Cart</div>
+    </div>
+</div>
+        <section id="header">
+            <a href="index.html">MYPO</a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a  href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><i class="far fa-shopping-bag" id="cart-icon" data-quantity="0"></i></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i class="far fa-shopping-bag" id="cart-icon" data-quantity="0"></i>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title" style="color: white;">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <!-- Total  -->
+                <div class="total" style="color: white;">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class="far fa-times" id="close-cart"></i>
+            </div>
+        </section>
+
+<!-- Hero -->
+
+        <section id="page-header" style="background-image: url(img/banner/b1.jpg);">
+            <h2>#stayhome</h2>
+            <p>Save more with coupons & up to 70% off!</p>
+        </section>
+
+<!-- Products -->
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/newproduct/p1.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Skirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$64</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p2.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title"> Crop top Hoddie</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$56</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p3.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">1 string crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$44</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p4.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Half off-shoulder crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$86</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p5.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Blue long sleeve crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$73</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p8.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Blue crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$42</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p9.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">long Sleeve Crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$69</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p10.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">White crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$71</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+                <div class="pro">
+                    <img src="img/newproduct/p11.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">2 layers Crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$77</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p12.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">long Sleeve Crop top with hole</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$69</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p13.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">top cardians</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$48</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p14.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Elegant top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$81</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p15.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Black long Sleeve Crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$60</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p16.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">2 colors Crop top</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$37</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p22.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Hoddie</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$63</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p23.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">cross hoddie</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$64</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p20.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Basic strainght Jean</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$106</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p17.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Style Pant</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$126</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p18.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Ripped Jean</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$132</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div><div class="pro">
+                    <img src="img/newproduct/p19.jpg" alt="" class="p-img">
+                    <div class="des">
+                        <span>MYPO</span>
+                        <h5 class="product-title">Jean with zip across</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="price">$112</h4>
+                    </div>
+                    <i class="fal fa-shopping-cart add-cart"></i>
+                </div>
+            </div>
+        </section>
+
+<!-- Pagination -->
+
+        <section id="pagination" class="section-p1">
+            <a href="shop.html">1</a>
+            <a href="shop1.html">2</a>
+            <a href="shop2.html">3</a>
+            <a href="shop3.html">4</a>
+        </section>
+
+<!-- Newsletter-->
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+<!-- Footer -->
+
+        <footer class="section-p1">
+            <div class="col">
+                <a href="/index.html" style="font-size: larger;">MYPO</a>
+                <h4>Contact</h4>
+                <p><strong>Address: </strong> Pathein , Ayeyarwady</p>
+                <p><strong>Phone: </strong> +959*********</p>
+                <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Whitelist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>@ 2023, MYPO etc - Shopping Website</p>
+            </div>
+        </footer>
+
+        <script src="scr.js"></script>
+    </body>
+
+</html>
