@@ -620,7 +620,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="img/products/${value.image}"/>
+            <img src="img/newproduct/${value.image}"/>
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>
@@ -664,12 +664,12 @@ function reloadCard(){
             newDiv.innerHTML = `
             <div>
                 <img src="image/${value.image}"/></div>
-            <div>${value,name}</div>
-            <div>${value.price.toLocaleString()}</div>
-            <div>
-            <button onclick="changeQuantity(${key},${value.quantity - 1})">-</button>
-            <div class="count">${value.quantity}</div>
-            <button onclick="changeQuantity(${key},${value.quantity + 1})">+</button>
+                <div>${value,name}</div>
+                <div>${value.price.toLocaleString()}</div>
+                <div>
+                <button onclick="changeQuantity(${key},${value.quantity - 1})">-</button>
+                <div class="count">${value.quantity}</div>
+                <button onclick="changeQuantity(${key},${value.quantity + 1})">+</button>
             </div>
             `;
             listCard.appendChild(newDiv);
